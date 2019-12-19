@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            .header{
+                padding: 25px;
+                text-align: center;
+                color:white;
+                background-color: darkred;
+                margin-bottom: 75px;
+            }
+            h1{
+                font-size: 4rem;
+            }
+            .cardLoc{
+                margin-right:15%;
+                margin-left:15%;
+            }
+
+            /* ------------------------------------------------------------ */
+            .employeeCard{
+                width: 200px;
+                min-height: 250px;
+                border-radius: 15px;
+                border: solid darkgray .5px;
+                box-shadow: 5px 5px 13px grey;
+                display: inline-block;
+                margin: 20px;
+            }
+            .cardHead{
+                color: white;
+                background-color: rgb(78, 128, 243);
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                padding: 10px;
+                padding-top: 5px;
+            }
+            .cardBody{
+                height: 100%;
+                background-color: rgb(243, 243, 243);
+                padding: 10px;
+                padding-bottom: 15px;
+                padding-top: 15px;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+            p{
+                padding: 5px;
+                border: solid rgb(214, 214, 214) .75px;
+                border-bottom: none;
+                background-color: white;
+                margin-top: 0;
+                margin-bottom: 0;
+                word-wrap: break-word;
+
+            }
+            p:first-child{
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border: solid rgb(214, 214, 214) .75px;
+                border-bottom: none;
+                background-color: white;
+                margin-top: 0;
+                margin-bottom: 0;
+
+            }
+            p:nth-last-of-type(1){
+                border: solid rgb(214, 214, 214) .75px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                background-color: white;
+                margin-top: 0;
+                margin-bottom: 0;
+
+            }
+            #email{
+                font-size: 13.5px;
+                
+            }
+
+        </style>
+        
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>Work Team</h1>
+        </div>
+        <div class="cardLoc">
+            ${placeIn}
+        </div>
+
+    </body>
+
+</html>

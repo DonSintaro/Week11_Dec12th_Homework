@@ -1,0 +1,29 @@
+{
+  "name": "week11_dec12th_homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "inquirer": "^7.0.1",
+    "jest": "^24.9.0",
+    "prompt-list": "^3.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --verbose test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DonSintaro/Week11_Dec12th_Homework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DonSintaro/Week11_Dec12th_Homework/issues"
+  },
+  "homepage": "https://github.com/DonSintaro/Week11_Dec12th_Homework#readme"
+}
