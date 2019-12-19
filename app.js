@@ -18,26 +18,26 @@ var placeInManager = [];
 var placeInEngineer = [];
 var placeInIntern = [];
 
-
+promptStart();
 
 // function templateIn(){}
-do {
-promptStart()
-inquirer
-.prompt([{
-    type: "list",
-    name: "doAgain",
-    message: "Another employee?: ",
-    choices: ["Yes","No"]
-    }])
-.then(function({doAgain}){
-    if (doAgain == "No"){
-        again = false;
-    }         
-})
-}
-while (again == true)
-console.log(placeIn);
+// do {
+// promptStart()
+// inquirer
+// .prompt([{
+//     type: "list",
+//     name: "doAgain",
+//     message: "Another employee?: ",
+//     choices: ["Yes","No"]
+//     }])
+// .then(function({doAgain}){
+//     if (doAgain == "No"){
+//         again = false;
+//     }         
+// })
+// }
+// while (again == true)
+
 
 function promptStart(){
     inquirer
@@ -93,6 +93,7 @@ function promptManager(name,email,id){
             }
             else{
                 placeInManager.push(new Manager(name,email,id,unique))
+                console.log(placeInManager);
             }
 
            
@@ -108,7 +109,7 @@ function promptEngineer(name,email,id){
         }])
         .then(function({unique}){
             
-                placeInEngineer.push(JSON.stringify(htmlTemplate));
+                placeInEngineer.push(new Engineer(name,email,id,unique));
                 console.log(placeInEngineer);
 
         })
@@ -125,7 +126,7 @@ function promptIntern(name,email,id){
         .then(function({unique}){
            
 
-                placeInIntern.push();
+            placeInIntern.push(new Intern(name,email,id,unique));
                 
 
         })
@@ -147,6 +148,5 @@ function templateLit(name,role,id,email,uniqueRole,unique){ return `<div class="
     <p><b>${uniqueRole} </b><span id="officeNum">${unique}</span></p>
 </div>
 </div>
-
 `
 }
